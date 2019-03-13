@@ -1,0 +1,10 @@
+.btn-navbar {
+    color: #fff;
+    border: .3rem solid $color-teal;
+    border-radius: .5rem;
+    padding: 1rem;
+
+    &:hover {
+        background-color: $color-teal;
+    }
+}

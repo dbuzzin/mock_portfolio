@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|PT+Sans:400,700" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+
+        <header class="header">
+            <div class="navbar">
+                <div class="navbar__logo">
+                    MyLogo
+                </div>
+                <ul class="navbar__nav">
+                    <li class="navbar__nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="navbar__nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="navbar__nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                </ul>
+                <div class="navbar__menu">
+                    <div class="navbar__menu-btn">
+                        <span class="navbar__menu-icon"></span>
+                    </div>
+                </div>
+                <div class="navbar__contact">
+                    <a href="#" class="btn-navbar">Contact</a>
+                </div>
+                
+            </div>
+            <h1 class="heading-primary">
+                Aspiring web developer with a keen focus on javascript
+            </h1>
+        </header>
+        
+        <section class="about">
+
+            <h2 class="heading-secondary heading-secondary--black">
+                Hello, I'm <span class="heading-secondary--red">Danny Pearson</span>.
+            </h2>
+
+            <div class="about-me">
+                <div class="about-me__left">
+                    <div class="picture-wrapper">
+                        <img src="images/code-snippet1.png" alt="" class="picture-wrapper__picture picture-wrapper__picture--1">
+                        <img src="images/code-snippet2.png" alt="" class="picture-wrapper__picture picture-wrapper__picture--2">
+                        <img src="images/code-snippet3.png" alt="" class="picture-wrapper__picture picture-wrapper__picture--3">
+                    </div>
+                </div>
+                <div class="about-me__right">
+                    <h3 class="about-me__sub-heading">
+                        Who am I?
+                    </h3>
+                    <p class="about-me__paragraph">
+                        A web developer in the making, passionate about learning and problem solving. 
+                        Over the past couple of years I've gained a solid understanding of various front-end 
+                        technologies such as HTML5, CSS3, SCSS, Javascript and jQuery. 
+                        I'm now looking to expand my knowledge and put the skills I've learned to good use in a work setting.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="portfolio">
+            <h2 class="heading-secondary heading-secondary--white">
+                What have I been working on?
+            </h2>
+            <div class="gallery">
+                <a target="_blank" href="https://codepen.io/dbuzzin/pen/mowNdd" class="gallery__img-wrapper">
+                    <img src="images/paint-app.png" alt="">
+                    <div class="overlay">
+                        <div class="overlay__text">
+                            This basic "Paint" style app made with HTML5 canvas & vanilla Javascript
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="https://codepen.io/dbuzzin/pen/XyGdVa" class="gallery__img-wrapper">
+                    <img src="images/colour-game.png" alt="">
+                    <div class="overlay">
+                        <div class="overlay__text">
+                            A guess the RGB colour game with three levels of difficulty built with vanillla Javascript
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="https://codepen.io/dbuzzin/pen/rzwGNo" class="gallery__img-wrapper">
+                    <img src="images/calculator.png" alt="">
+                    <div class="overlay">
+                        <div class="overlay__text">
+                            A simple calculator built with vanilla Javascript
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" href="https://codepen.io/dbuzzin/pen/ZPJpgw" class="gallery__img-wrapper">
+                    <img src="images/weather-app.png" alt="">
+                    <div class="overlay">
+                        <div class="overlay__text">
+                            And a minimalistic weather app built with vanilla Javascript using OpenWeatherMap API
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="modal">
+            <span class="modal__close">&plus;</span>
+            <ul class="modal__menu">
+                <li class="modal__nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="modal__nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="modal__nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                </li>
+            </ul>
+            <div class="modal__box">
+                <p class="modal__box-details">
+                    <i class="fas fa-envelope"></i> myemail@email.co.uk
+                </p>
+                <p class="modal__box-details">
+                    <i class="fas fa-phone"></i> 07777 000999
+                </p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="social-media">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-codepen"></i></a>
+            </div>
+            <div class="copyright">Danny Pearson &copy; 2019</div>
+        </footer>
+
+        <script type="text/javascript" src="js/app.js"></script>
+
+    </body>
+
+</html>

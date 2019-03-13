@@ -1,0 +1,25 @@
+.footer {
+    background-color: $color-dark-grey;
+    padding: 5rem;
+    color: $color-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+
+    *:hover {
+        color: $color-teal;
+    }
+
+    *:not(:last-child) {
+        margin-right: 2rem;
+    }
+}
+
+.copyright {
+    font-size: 1.1rem;
+}

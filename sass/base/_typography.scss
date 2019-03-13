@@ -1,0 +1,44 @@
+.heading-primary {
+    width: 50%;
+    font-size: 5.5rem;
+    margin-top: 8rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    text-shadow: .5rem 1rem 5rem rgba($color-black, .2);
+
+    animation-name: moveInFromRight;
+    animation-duration: 1.5s;
+
+    @include respond(phone) {
+        width: 80%;
+        font-size: 4rem;
+        margin-left: 15%;
+    }
+}
+
+.heading-secondary {
+    font-size: 4rem;
+
+    &--red {
+        color: $color-red;
+    }
+
+    &--black {
+        color: $color-black;
+        animation-name: moveInFromBottom;
+        animation-duration: 2s;
+
+        @include respond(phone) {
+            text-align: center;
+        }
+    }
+
+    &--white {
+        color:$color-white;
+    }
+}
+
+p {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 500;
+}

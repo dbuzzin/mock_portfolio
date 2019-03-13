@@ -1,0 +1,125 @@
+.header {
+    height: 80vh;
+    background-image: url(../../images/roberto-nickson-1424153-unsplash.jpg);
+    background-size: cover;
+    background-position: 0, -10rem;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    color: $color-white;
+
+}
+
+.navbar {
+    height: 15rem;
+    font-size: 1.6rem;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    letter-spacing: .25rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include respond(phone) {
+        height: 10rem;
+    }
+
+    &__logo {
+        font-size: 3rem;
+        margin: 5rem;
+    }
+   
+    &__nav {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+
+        &-item:hover {
+            transform: scale(1.2);
+            transition: all .2s;
+        }
+
+        &-item:not(:last-child) {
+            margin-right: 5rem;
+        }
+
+
+    }
+
+    &__contact {
+        margin: 5rem;
+        justify-content: flex-end;
+
+        @include respond(phone) {
+            margin: 3rem;
+        }
+    }
+
+    > * {
+        display: flex;
+        flex: 1;
+    }
+
+    @include respond(phone) {
+        > *:not(.navbar__contact):not(.navbar__menu) {
+            display: none;
+        }
+    }
+
+    &__menu {
+        margin-left: 2rem;
+        font-size: 3rem;
+        display: none;
+
+        &-btn {
+            display: flex;
+            padding: 3rem 2rem;
+            border: .3rem solid $color-teal;
+            border-radius: .5rem;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $color-teal;
+            }
+        }
+
+        &-icon {
+
+            &,
+            &::before,
+            &::after {
+                width: 3rem;
+                height: .2rem;
+                background-color: $color-white;
+                display:  inline-block;
+
+                
+            }
+
+            &::before,
+            &::after {
+                position: absolute;
+                content: "";
+                left: 0;
+            }
+
+            &::before {
+                top: -1rem;
+            }
+
+            &::after {
+                top: 1rem;
+            }
+        }
+
+        @include respond(phone) {
+            display: flex;
+            // justify-content: flex-end;
+        }
+    }
+
+    a {
+        color: $color-white;
+    }
+    
+}
